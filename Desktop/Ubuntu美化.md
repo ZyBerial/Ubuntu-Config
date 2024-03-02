@@ -62,6 +62,6 @@
 ## 效果展示
 
 1. 打开关闭动画  
-![打开关闭动画](../.asset/Gnome/open-close.gif)
+![打开关闭动画](https://github.com/ZyBerial/Ubuntu-Config/blob/main/.asset/Gnome/open-close.gif)
 2. 桌面预览  
 ![Desktop](../.asset/Gnome/Desktop.png)
