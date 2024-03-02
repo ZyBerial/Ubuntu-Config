@@ -65,3 +65,20 @@
 ![打开关闭动画](https://github.com/ZyBerial/Ubuntu-Config/blob/main/.asset/Gnome/open-close.gif)
 2. 桌面预览  
 ![Desktop](../.asset/Gnome/Desktop.png)
+
+## 恢复
+
+大部分主题卸载方法会在其github中给出，或者运行`./install -h`查看。比较常见的是直接运行
+
+```shell
+./install --remove
+./install --uninstall
+```
+
+当桌面被搞的乱七八糟，可以运行`dconf reset -f /org/gnome/`。此命令可能导致输入法无法使用，需要设置里重新设置输入法。  
+可能还有一些比较固执的主题效果无法还原，运行下面的指令：
+
+```shell
+sudo aptitude reinstall `dpkg -S /usr/share/icons | cut -d: -f1 | sed 's/,//g'`
+sudo aptitude reinstall `dpkg -S /etc/X11/cursors | cut -d: -f1 | sed 's/,//g'`
+```
